@@ -24,7 +24,7 @@ For detailed instructions on contributing, please refer to the README of each re
 - [Raters Frontend Example](https://github.com/RatersApp/raters-fe-example/blob/main/README.md)
 
 
-![Architecture Diagram](link-to-diagram)
+![Architecture Diagram](https://github.com/RatersApp/.github/blob/main/profile/RatersAppUserflow.png)
 
 
 ## Sprint Goals and Milestones
