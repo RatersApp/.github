@@ -24,10 +24,108 @@ For detailed instructions on contributing, please refer to the README of each re
 - [Raters Frontend Example](https://github.com/RatersApp/raters-fe-example/blob/main/README.md)
 
 ### Ratersapp Architecture Diagram
-![Architecture Diagram](https://github.com/RatersApp/.github/blob/main/profile/RatersAppArchitectureDiagram.png)
+
+```mermaid
+graph TD
+    style User_Interaction fill:#B0E0E6,stroke:#333,stroke-width:2px
+    style Frontend fill:#ADD8E6,stroke:#333,stroke-width:2px
+    style Backend fill:#87CEEB,stroke:#333,stroke-width:2px
+    style Mobile_Apps fill:#87CEEB,stroke:#333,stroke-width:2px
+    style Image_Server fill:#4682B4,stroke:#333,stroke-width:2px
+    style Database fill:#4682B4,stroke:#333,stroke-width:2px
+    style Blockchain fill:#B0E0E6,stroke:#333,stroke-width:2px
+    style Security fill:#4682B4,stroke:#333,stroke-width:2px
+
+    %% User Interaction
+    subgraph User_Interaction[User Interaction]
+        A[User Interacts via Web or Mobile]
+        A -->|Web2 Auth| B[Web2: Email & Password Auth]
+        A -->|Web3 Auth| C[Web3: Internet Identity & NFID]
+    end
+
+    %% Frontend
+    subgraph Frontend[Frontend]
+        D[React.js, Next.js, TypeScript]
+        A --> D
+    end
+
+    %% Backend
+    subgraph Backend[Backend]
+        E[Backend Services]
+        D -->|API Request| E
+    end
+
+    %% Mobile Apps
+    subgraph Mobile_Apps[Mobile Apps]
+        G[iOS Objective-C]
+        H[Android Kotlin, RxJava]
+        A --> G
+        A --> H
+        G -->|API Request| E
+        H -->|API Request| E
+    end
+
+    %% Image Server
+    subgraph Image_Server[Image Server]
+        I[Image Storage]
+        E -->|Image Request| I
+    end
+
+    %% Database
+    subgraph Database[Database]
+        J[MySQL]
+        K[ElasticSearch]
+        E -->|Store/Retrieve Data| J
+        E -->|Search Data| K
+    end
+
+    %% Blockchain
+    subgraph Blockchain[Blockchain]
+        L[Internet Computer ICP]
+        M[Canister Storage on ICP]
+        N[ICP Ledger]
+        E -->|Blockchain Interaction| L
+        L -->|Store Data| M
+        M -->|Retrieve Data| L
+        L -->|Wallet Address| N
+        
+    end
+
+    %% Security
+    subgraph Security[Security]
+        P[Data Encryption Services]
+        E --> P
+    end
+
+    %% Responses
+    E -->|Response| D
+    E -->|Response| G
+    E -->|Response| H
+```
+
 
 ### Ratersapp User Flow Diagram
-![Architecture Diagram](https://github.com/RatersApp/.github/blob/main/profile/RatersAppUserflow.png)
+```mermaid
+graph TD
+    %% User Flow
+    User --> |Web2 Auth| Home[Home Screen]
+    User --> |Web3 Auth| Home
+    Home --> |Search| SearchResults[Show Search Results]
+    Home --> |Recommendations| Recommendations[View Recommendations]
+    SearchResults --> MovieDetails[Movie Details]
+    Recommendations --> MovieDetails
+
+    %% Movie Interaction
+    MovieDetails --> |Write Review| CreateReview[Create Review]
+    MovieDetails --> |Rate Movie| RateMovie[Rate Movie]
+    CreateReview --> |Store on Blockchain| BlockchainReview[Blockchain Storage]
+    RateMovie --> |Store on Blockchain| BlockchainRating[Blockchain Storage]
+
+    %% Community
+    Home --> |Community Interaction| Community[Community Interaction]
+    Community --> |Discuss Movies| Discussions[Discuss Movies]
+    Community --> |Share Reviews| Share[Share Reviews]
+```
 
 ## Sprint Goals and Milestones
 
