@@ -12,6 +12,8 @@ RatersApp is a SocialFi platform powered by the Internet Computer (ICP) blockcha
 - **Raters Correlation:** Python, Flask
 - **Blockchain:** Internet Computer (ICP), Canister storage on ICP
 
+[![Video Title](https://github.com/RatersApp/.github/blob/main/profile/BLOCKCHAIN_RECORD_info.png)](https://www.youtube.com/watch?v=stSXweRtnAM)
+
 ### Infrastructure
 - Dedicated Server Hosting, Ubuntu, Cloudflare, Bitbucket, Docker
 
