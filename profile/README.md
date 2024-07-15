@@ -16,7 +16,7 @@ RatersApp is a SocialFi platform powered by the Internet Computer (ICP) blockcha
 
 [**A brief overview of how to log in via NFID or Internet Identity**:](https://www.youtube.com/watch?v=d2m7dn_5Azk)
 
-[![Video Title](https://github.com/RatersApp/.github/blob/main/profile/RatersApp.jpg)](https://www.youtube.com/watch?v=d2m7dn_5Azk)
+[![Video Title](https://github.com/RatersApp/.github/blob/main/profile/Raters_screenshot.png)](https://www.youtube.com/watch?v=d2m7dn_5Azk)
 
 ### Infrastructure
 - Dedicated Server Hosting, Ubuntu, Cloudflare, Bitbucket, Docker
