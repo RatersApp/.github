@@ -29,6 +29,7 @@ For detailed instructions on contributing, please refer to the README of each re
 
 ```mermaid
 graph TD
+    %% Node Styles
     style User_Interaction fill:#B0E0E6,stroke:#333,stroke-width:2px
     style Frontend fill:#ADD8E6,stroke:#333,stroke-width:2px
     style Backend fill:#87CEEB,stroke:#333,stroke-width:2px
@@ -40,7 +41,7 @@ graph TD
 
     %% User Interaction
     subgraph User_Interaction[User Interaction]
-        A[User Interacts via Web or Mobile]
+        A[User Interacts via Web]
         A -->|Web2 Auth| B[Web2: Email & Password Auth]
         A -->|Web3 Auth| C[Web3: Internet Identity & NFID]
     end
@@ -55,6 +56,7 @@ graph TD
     subgraph Backend[Backend]
         E[Backend Services]
         D -->|API Request| E
+        E -->|Blockchain Interaction| L
     end
 
     %% Mobile Apps
@@ -85,12 +87,9 @@ graph TD
     subgraph Blockchain[Blockchain]
         L[Internet Computer ICP]
         M[Canister Storage on ICP]
-        N[ICP Ledger]
         E -->|Blockchain Interaction| L
         L -->|Store Data| M
         M -->|Retrieve Data| L
-        L -->|Wallet Address| N
-        
     end
 
     %% Security
@@ -103,6 +102,10 @@ graph TD
     E -->|Response| D
     E -->|Response| G
     E -->|Response| H
+    L -->|Send Data| D
+    L -->|Send Data| G
+    L -->|Send Data| H
+
 ```
 
 
