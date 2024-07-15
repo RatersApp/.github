@@ -14,7 +14,7 @@ RatersApp is a SocialFi platform powered by the Internet Computer (ICP) blockcha
 - **Authentication**: NFID, Internet Identity
 - **ICP Libraries:** @dfinity/agent, @dfinity/identity, @dfinity/candid, @dfinity/ledger
 
-**A brief overview of how to log in via NFID or Internet Identity**
+[**A brief overview of how to log in via NFID or Internet Identity**:](https://www.youtube.com/watch?v=d2m7dn_5Azk)
 
 [![Video Title](https://github.com/RatersApp/.github/blob/main/profile/RatersApp.jpg)](https://www.youtube.com/watch?v=d2m7dn_5Azk)
 
