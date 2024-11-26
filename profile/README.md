@@ -18,8 +18,6 @@ RatersApp is a SocialFi platform powered by the Internet Computer (ICP) blockcha
 
 For detailed instructions on contributing, please refer to the README of each repository:
 
-- [Raters Canister](https://github.com/RatersApp/canister/blob/main/README.md)
-- [Raters Backend JS](https://github.com/RatersApp/raters-backend-js/blob/main/README.md)
 - [Raters Frontend Example](https://github.com/RatersApp/raters-fe-example/blob/main/README.md)
 
 ### Ratersapp Architecture Diagram
