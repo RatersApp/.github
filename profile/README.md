@@ -1,6 +1,6 @@
 # RatersApp: Discover, Rate, and Review Movies
 
-RatersApp is a SocialFi platform powered by the Internet Computer (ICP) blockchain, designed for movie lovers. It provides a space to share reviews, ratings, and discover films.
+RatersApp is a SocialFi platform powered by the blockchain, designed for movie lovers. It provides a space to share reviews, ratings, and discover films.
 
 ## Overview
 
