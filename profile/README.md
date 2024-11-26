@@ -10,13 +10,6 @@ RatersApp is a SocialFi platform powered by the Internet Computer (ICP) blockcha
 - **Android:** Kotlin, RxJava, Coroutines, Retrofit, Koin
 - **Web:** React.js, Redux, Sagas, Next.js, Vercel
 - **Raters Correlation:** Python, Flask
-- **Blockchain:** Internet Computer (ICP), Canister storage on ICP, Azle core framework
-- **Authentication**: NFID, Internet Identity
-- **ICP Libraries:** @dfinity/agent, @dfinity/identity, @dfinity/candid, @dfinity/ledger
-
-[**A brief overview of how to log in via NFID or Internet Identity**:](https://www.youtube.com/watch?v=d2m7dn_5Azk)
-
-[![Video Title](https://github.com/RatersApp/.github/blob/main/profile/Raters_screenshot.png)](https://www.youtube.com/watch?v=d2m7dn_5Azk)
 
 ### Infrastructure
 - Dedicated Server Hosting, Ubuntu, Cloudflare, Bitbucket, Docker
